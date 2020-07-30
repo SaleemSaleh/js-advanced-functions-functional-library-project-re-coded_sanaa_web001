@@ -56,6 +56,35 @@ const fi = (function() {
       }
         return  size;
       }
+<<<<<<< HEAD
+=======
+
+    },
+  first: function(collection , n){
+        if(n){
+          let result = [];
+          for ( let i = 0 ; i < n ; i++ ) {
+           result.push(collection[i])
+          }
+            return result;
+        }else
+        {
+          return  collection[0];
+        }
+      },
+
+      last: function(collection , n){
+            if(n){
+              return collection.slice(collection.length - 1 - n));
+
+            }else
+            {
+              return  collection[collection.length - 1];
+            }
+          },
+
+    functions: function() {
+>>>>>>> 44b6af13e6675766d0de40ea2e2d686bb6b521f9
 
     },
   first: function(collection , n){
@@ -81,6 +110,7 @@ const fi = (function() {
             }
           },
 
+<<<<<<< HEAD
       compact: function(collection ){
         return collection.filter(x => !!x)
         },
@@ -149,6 +179,11 @@ const fi = (function() {
 
       }
     })()
+
+=======
+  }
+})()
+>>>>>>> 44b6af13e6675766d0de40ea2e2d686bb6b521f9
 
 
 fi.libraryMethod()
